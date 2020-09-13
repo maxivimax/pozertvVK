@@ -1,0 +1,265 @@
+@font-face {
+font-family: 'TT Commons DemiBold';
+src: url('../fonts/TTCommons-DemiBold.eot');
+src: url('../fonts/TTCommons-DemiBold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/TTCommons-DemiBold.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'sf Pro Regular';
+src: url('../fonts/SFProDisplay-Regular.eot');
+src: url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+    font-family: 'San Francisco Pro';
+    src: local('sf Pro Medium'), local('../fonts/San-Francisco-Pro-Display-Medium'),
+        url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/SFProDisplay-Medium.woff') format('woff'),
+        url('../fonts/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.title1{
+	position: static;
+  	padding-top: 25px;  
+
+	/* TT Commons Title 2 */
+
+	font-family: TT Commons DemiBold;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 50px;
+	line-height: 26px;
+	/* identical to box height, or 124% */
+
+	text-align: center;
+
+	/* Light Header / Text */
+
+	color: #000000;
+
+	/* Inside Auto Layout */
+
+	flex: none;
+	order: 0;
+	align-self: flex-start;
+	margin: 4px 0px;
+}
+.uptitle{
+	position: static;
+
+  	padding-top: 25px;
+
+	width: "100";
+	height: "100000";
+}
+
+.butta{
+	position: absolute;
+	width:100%;
+	top:50%;
+  	padding-top: 50px;  
+
+	/* TT Commons Title 2 */
+
+	font-family: sf Pro Regular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	/* identical to box height, or 124% */
+
+	text-align: center;
+
+	/* Light Header / Text */
+
+	color: #818C99;
+}
+
+.butt{
+	text-decoration: none;
+}
+
+input {
+	width: 90%;
+	font-size: 40px;
+	padding: 6px 10px 4px 10px;
+	padding-left: 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+}
+
+.buttonn{
+	background: #4986CC; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 20px; /* Поля вокруг текста */
+    padding-left: 35px; 
+    padding-right: 35px; 
+	border-radius: 20px;
+
+
+	font-family: sf Pro Medium
+	font-weight: normal;
+	font-size: 35px;
+}
+
+.back{
+position: static;
+  	padding-top: 20px;  
+
+	/* Inside Auto Layout */
+
+	flex: none;
+	order: 0;
+	align-self: flex-start;
+	margin: 4px 0px;
+}
+
+.vari{
+	position: absolute;
+	width:100%;
+	top:50%;
+  	padding-top: 50px;  
+
+	/* TT Commons Title 2 */
+
+	font-family: sf Pro Regular;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 35px;
+	/* identical to box height, or 124% */
+
+	text-align: center;
+
+	/* Light Header / Text */
+
+	color: #818C99;
+}
+textarea {
+	/* = Убираем скролл */
+	overflow: auto;
+	font-size: 40px;
+
+	/* = Убираем увеличение */
+	resize: none;
+width: 90%;
+	height: 250px;
+
+	/* = Добавим фон, рамку, отступ*/
+	padding-left: 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+}
+
+.select {
+    position: relative;
+}
+
+ .select select {
+    display: block;
+    width: 90%; /* от ширины блока div */
+    padding: .75rem 2.5rem .75rem 1rem;/* отступы от текста до рамки */
+	padding-left: 10px;
+	border: 1px solid #cecece;
+	background: #F6F6f6;
+	border-radius: 8px;
+    -webkit-appearance: none;/* Chrome */
+    -moz-appearance: none;/* Firefox */
+    font-family: inherit;/* наследует от родителя */
+    font-size: 1rem;
+    color: #444;
+    	background: #F6F6f6;
+
+}
+
+
+/* для элемента input c type="radio" */
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #b3d7ff;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+  }
+  /* стили для радиокнопки, находящейся в фокусе */
+  .custom-radio:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #80bdff;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+  }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+  
+/* .select:after {
+    content: "";
+    display: block;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    margin-top: -3px;
+}*/
+.niz{
+		position: absolute;
+	width:100%;
+
+	/* TT Commons Title 2 */
+	/* identical to box height, or 124% */
+
+	text-align: center;
+
+	/* Light Header / Text */
+
+	color: #818C99;
+}
